@@ -1,0 +1,7 @@
+{
+  "method": "GET",
+  "endpoint": "/api/RiderApp/riderState",
+  "headers": {
+    "organisation-id": "flipkarthl"
+  }
+}
