@@ -33,7 +33,7 @@
                 "softdata_upload_time": "2025-08-04T00:35:47.000Z",
                 "last_updated_at": "1754301546639",
                 "retry_count_of_virtual_number_assignment": "1",
-                "status": "assigned_for_delivery",
+                "status": "pickup_completed",
                 "payment_details": [
                     {
                         "cod_collection_mode": "COD"
@@ -115,8 +115,8 @@
                         "auto_swipe": false,
                         "auto_swipe_distance": 0,
                         "display_warning": false,
-                        "geofence": false,
-                        "geofence_distance": 0
+                        "geofence": true,
+                        "geofence_distance": 1
                     },
                     "pickingupstarted": {
                         "auto_swipe": true,
@@ -149,9 +149,9 @@
                     "reachedgate": {
                         "auto_swipe": true,
                         "auto_swipe_distance": 500,
-                        "display_warning": false,
-                        "geofence": false,
-                        "geofence_distance": 0
+                        "display_warning": true,
+                        "geofence": true,
+                        "geofence_distance": 1
                     }
                 }
             },
@@ -181,7 +181,7 @@
                 "hub_id": "1315561743434526064",
                 "softdata_upload_time": "2025-08-04T00:35:47.000Z",
                 "retry_count_of_virtual_number_assignment": "1",
-                "status": "assigned_for_delivery",
+                "status": "pickup_completed",
                 "payment_details": [
                     {
                         "cod_collection_mode": "COD"
@@ -263,8 +263,8 @@
                         "auto_swipe": false,
                         "auto_swipe_distance": 0,
                         "display_warning": false,
-                        "geofence": false,
-                        "geofence_distance": 0
+                        "geofence": true,
+                        "geofence_distance": 1
                     },
                     "pickingupstarted": {
                         "auto_swipe": false,
@@ -298,13 +298,13 @@
                         "auto_swipe": true,
                         "auto_swipe_distance": 500,
                         "display_warning": false,
-                        "geofence": false,
-                        "geofence_distance": 0
+                        "geofence": true,
+                        "geofence_distance": 1
                     }
                 }
             }
         ],
         "cards_to_show": [],
-        "worker_status": "in_store"
+        "worker_status": "out_for_delivery"
     }
 }

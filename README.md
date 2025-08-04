@@ -26,7 +26,9 @@ A simple file-based mock server using FastAPI. Serve mock API responses for deve
    python3 -m uvicorn mock_server:app --reload --port 8000
    ```
 
-3. **Expose locally with ngrok:**
+3. **Expose locally with HTTPS tunnel:**
+
+   **Option A - Using ngrok:**
    - [Download ngrok](https://ngrok.com/download)
    - Add your authtoken:
      ```sh
@@ -36,6 +38,17 @@ A simple file-based mock server using FastAPI. Serve mock API responses for deve
      ```sh
      ngrok http 8000
      ```
+
+   **Option B - Using Cloudflare Tunnel (Recommended):**
+   - Install cloudflared:
+     ```sh
+     brew install cloudflared
+     ```
+   - Start Cloudflare tunnel:
+     ```sh
+     cloudflared tunnel --url http://localhost:8000
+     ```
+   - **Advantages**: Free, no connection limits, no session timeouts, more reliable than ngrok free tier
 
 ## Generate Mocks from Curl Commands
 
