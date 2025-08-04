@@ -10,6 +10,18 @@ A simple file-based mock server using FastAPI. Serve mock API responses for deve
    ```
 
 2. **Run the server:**
+
+   **Option A - Using shell script:**
+   ```sh
+   ./start.sh
+   ```
+
+   **Option B - Using Make:**
+   ```sh
+   make start
+   ```
+
+   **Option C - Direct command:**
    ```sh
    python3 -m uvicorn mock_server:app --reload --port 8000
    ```
