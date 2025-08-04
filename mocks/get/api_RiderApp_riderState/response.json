@@ -1,33 +1,259 @@
 {
     "current_state": {
-        "checked_in": true,
-        "waiting_for_slot": false,
         "is_on_break": false,
-        "worker_status": "in_store",
-        "has_insulated_bag": null,
-        "has_returnable_assets": false,
         "returning_to_hub_task_list": [],
+        "checked_in": true,
+        "has_returnable_assets": false,
+        "waiting_for_slot": false,
         "current_orders": [
             {
-                "task_id": "1315561743455872386",
-                "task_type": "DELIVERY",
-                "task_reference_number": "174885B741",
-                "otp": "7150",
-                "softdata_upload_time": "2025-07-31T06:25:34.000Z",
-                "delivered_time": null,
-                "consignment_id": "1315561743461242675",
-                "reference_number": "OBD_BATCH_TEST3",
-                "status": "assigned_for_delivery",
-                "is_cod": true,
-                "hub_id": "1315561743434526064",
-                "customer_id": null,
-                "weight": null,
-                "actual_weight": null,
-                "load_time": null,
-                "cod_amount": 717,
                 "shipping_charges": "0",
-                "duty_charges": "0",
+                "wait_time_for_pickup_completed": 172800000,
+                "virtual_number": "+918071031630",
+                "task_reference_number": "174885C58D",
+                "is_pickup_complete_allowed": false,
+                "is_parent": false,
+                "total_delivery_distance": 57.19,
+                "order_instructions": [],
+                "is_bulk": false,
+                "expected_distance": 57185.3,
+                "hu_details": [],
+                "ondemand_delivery_promise_mins": "0",
+                "conscent_code": "5660",
+                "assign_time": 1754301551710,
+                "order_type": "EXPRESS",
+                "hub_code": "TESTHUB",
+                "is_vip": false,
+                "custom_fields": {},
+                "customer_phone": "6203145660",
+                "otp": "3188",
+                "priority": 1,
+                "reference_number": "TESTOD001230001",
+                "hub_id": "1315561743434526064",
+                "softdata_upload_time": "2025-08-04T00:35:47.000Z",
+                "last_updated_at": "1754301546639",
+                "retry_count_of_virtual_number_assignment": "1",
+                "status": "assigned_for_delivery",
+                "payment_details": [
+                    {
+                        "cod_collection_mode": "COD"
+                    }
+                ],
+                "order_number": "TESTOD001230001",
+                "consignment_id": "1315561743461293982",
+                "task_id": "1315561743455890604",
+                "is_cod": true,
+                "cod_amount": 1,
+                "is_child": false,
+                "pack_details": [
+                    {
+                        "storage_location": "aa",
+                        "description": "Bag Detail",
+                        "reference_number": "NPG0624CS00092975"
+                    }
+                ],
+                "pieces_detail": [
+                    {
+                        "menu_description": "Noise Icon 3 1.91\" Display with Bluetooth Calling, Metallic finish & Voice Assistant Smartwatch",
+                        "denormalized_volume_unit": "ccm",
+                        "quantity": 1,
+                        "denormalized_weight_unit": "gm",
+                        "denormalized_dimension_unit": "mm",
+                        "description": "Noise Icon 3 1.91\" Display with Bluetooth Calling, Metallic finish & Voice Assistant Smartwatch",
+                        "delivery_otp": "3085",
+                        "chargeable_weight": 0,
+                        "cod_amount": "1.0",
+                        "reference_number": "433077054301433200000",
+                        "volume": 0,
+                        "denormalized_volume": 0,
+                        "declared_value": "1102.0",
+                        "declared_value_per_unit": 1102,
+                        "volumetric_weight": 0,
+                        "volume_unit": "ccm",
+                        "weight_unit": "kg",
+                        "customer_reference_number": "HL20240609161_1",
+                        "dimension_unit": "cm"
+                    }
+                ],
+                "pickup_bulk_scan_required": false,
+                "delivery_promise_msg": "",
+                "consignment_hub_code": "TESTHUB",
+                "delivery_payment_reference_ids": [
+                    "Cash Payment",
+                    "Card",
+                    "FlipkartQR"
+                ],
+                "delivery_time_slot_start": "1754267743000",
+                "order_promise_start_time_ondemand": "1754267567000",
                 "payment_collection_details": [],
+                "config_hash": "1315561743434519360",
+                "duty_charges": "0",
+                "delivery_time_slot_end": "1754267567000",
+                "final_amount": "1.0",
+                "location": {
+                    "pincode": "110085",
+                    "lng": 77.11092310000001,
+                    "phone": "+918071031630",
+                    "name": "Sameer Kumar",
+                    "address_line_1": "A/238 CRPF Rohani Sector 26 Lal Building Get number.2 New Delhi",
+                    "address_line_2": "A/238 CRPF Rohani Sector 26 Lal Building Get number.2 New Delhi",
+                    "lat": 28.74340179999999
+                },
+                "delivery_bulk_scan_required": false,
+                "task_type": "DELIVERY",
+                "business_id": "FKMINUTES",
+                "consignment_hub_name": "TESTHUB",
+                "order_tags": [
+                    "OBD"
+                ],
+                "hub_location": {
+                    "lat": 28.4059442993989,
+                    "lng": 77.04473225636407
+                },
+                "geofence_config": {
+                    "pickup_completed": {
+                        "auto_swipe": false,
+                        "auto_swipe_distance": 0,
+                        "display_warning": false,
+                        "geofence": false,
+                        "geofence_distance": 0
+                    },
+                    "pickingupstarted": {
+                        "auto_swipe": true,
+                        "auto_swipe_distance": 10,
+                        "display_warning": true,
+                        "geofence": true,
+                        "geofence_distance": 10
+                    },
+                    "calling": {
+                        "auto_swipe": true,
+                        "auto_swipe_distance": 10,
+                        "display_warning": true,
+                        "geofence": true,
+                        "geofence_distance": 10
+                    },
+                    "undelivered": {
+                        "auto_swipe": false,
+                        "auto_swipe_distance": 0,
+                        "display_warning": false,
+                        "geofence": false,
+                        "geofence_distance": 0
+                    },
+                    "delivered": {
+                        "auto_swipe": false,
+                        "auto_swipe_distance": 0,
+                        "display_warning": false,
+                        "geofence": false,
+                        "geofence_distance": 0
+                    },
+                    "reachedgate": {
+                        "auto_swipe": true,
+                        "auto_swipe_distance": 500,
+                        "display_warning": false,
+                        "geofence": false,
+                        "geofence_distance": 0
+                    }
+                }
+            },
+            {
+                "shipping_charges": "0",
+                "wait_time_for_pickup_completed": 172800000,
+                "virtual_number": "+911141171972",
+                "task_reference_number": "174885C58E",
+                "is_pickup_complete_allowed": false,
+                "is_parent": false,
+                "total_delivery_distance": 57.19,
+                "order_instructions": [],
+                "is_bulk": false,
+                "expected_distance": 57185.3,
+                "hu_details": [],
+                "ondemand_delivery_promise_mins": "0",
+                "conscent_code": "5660",
+                "assign_time": 1754301502632,
+                "order_type": "EXPRESS",
+                "hub_code": "TESTHUB",
+                "is_vip": false,
+                "custom_fields": {},
+                "customer_phone": "6203145660",
+                "otp": "3412",
+                "priority": 2,
+                "reference_number": "TESTOD001230002",
+                "hub_id": "1315561743434526064",
+                "softdata_upload_time": "2025-08-04T00:35:47.000Z",
+                "retry_count_of_virtual_number_assignment": "1",
+                "status": "assigned_for_delivery",
+                "payment_details": [
+                    {
+                        "cod_collection_mode": "COD"
+                    }
+                ],
+                "order_number": "TESTOD001230002",
+                "consignment_id": "1315561743461293983",
+                "task_id": "1315561743455890605",
+                "is_cod": true,
+                "cod_amount": 1,
+                "is_child": false,
+                "pack_details": [
+                    {
+                        "storage_location": "aa",
+                        "description": "Bag Detail",
+                        "reference_number": "NPG0624CS00092975"
+                    }
+                ],
+                "pieces_detail": [
+                    {
+                        "menu_description": "Noise Icon 3 1.91\" Display with Bluetooth Calling, Metallic finish & Voice Assistant Smartwatch",
+                        "denormalized_volume_unit": "ccm",
+                        "quantity": 1,
+                        "denormalized_weight_unit": "gm",
+                        "denormalized_dimension_unit": "mm",
+                        "description": "Noise Icon 3 1.91\" Display with Bluetooth Calling, Metallic finish & Voice Assistant Smartwatch",
+                        "delivery_otp": "3085",
+                        "chargeable_weight": 0,
+                        "cod_amount": "1.0",
+                        "reference_number": "433077054301433200000",
+                        "volume": 0,
+                        "denormalized_volume": 0,
+                        "declared_value": "1102.0",
+                        "declared_value_per_unit": 1102,
+                        "volumetric_weight": 0,
+                        "volume_unit": "ccm",
+                        "weight_unit": "kg",
+                        "customer_reference_number": "HL20240609161_1",
+                        "dimension_unit": "cm"
+                    }
+                ],
+                "pickup_bulk_scan_required": false,
+                "delivery_promise_msg": "",
+                "consignment_hub_code": "TESTHUB",
+                "delivery_payment_reference_ids": [
+                    "Cash Payment",
+                    "Card",
+                    "FlipkartQR"
+                ],
+                "delivery_time_slot_start": "1754267743000",
+                "order_promise_start_time_ondemand": "1754267567000",
+                "payment_collection_details": [],
+                "config_hash": "1315561743434519360",
+                "duty_charges": "0",
+                "delivery_time_slot_end": "1754267567000",
+                "final_amount": "1.0",
+                "location": {
+                    "pincode": "110085",
+                    "lng": 77.11092310000001,
+                    "phone": "+911141171972",
+                    "name": "Sameer Kumar",
+                    "address_line_1": "A/238 CRPF Rohani Sector 26 Lal Building Get number.2 New Delhi",
+                    "address_line_2": "A/238 CRPF Rohani Sector 26 Lal Building Get number.2 New Delhi",
+                    "lat": 28.74340179999999
+                },
+                "delivery_bulk_scan_required": false,
+                "task_type": "DELIVERY",
+                "business_id": "FKMINUTES",
+                "consignment_hub_name": "TESTHUB",
+                "order_tags": [
+                    "OBD"
+                ],
                 "hub_location": {
                     "lat": 28.4059442993989,
                     "lng": 77.04473225636407
@@ -75,136 +301,10 @@
                         "geofence": false,
                         "geofence_distance": 0
                     }
-                },
-                "notes": null,
-                "pieces_detail": [
-                    {
-                        "width": 0.78993,
-                        "height": 0.15658000000000002,
-                        "length": 0.5613800000000001,
-                        "volume": 69435550,
-                        "weight": 0.00011,
-                        "quantity": 1,
-                        "cod_amount": "717.0",
-                        "description": "boAt Rockerz 235 Pro with upto 20 Hours Playback & ASAP Charge Bluetooth",
-                        "is_exchange": false,
-                        "qc_required": true,
-                        "volume_unit": "ccm",
-                        "weight_unit": "kg",
-                        "delivery_otp": "3352",
-                        "declared_value": "717.0",
-                        "dimension_unit": "cm",
-                        "reference_number": "435079749679311200000",
-                        "chargeable_weight": 0.013887108490874402,
-                        "volumetric_weight": 0.013887108490874402,
-                        "denormalized_width": "7.8993",
-                        "denormalized_height": "1.5658",
-                        "denormalized_length": "5.6138",
-                        "denormalized_volume": 69435550,
-                        "denormalized_weight": "0.11",
-                        "pack_reference_number": "RP20225MK01746821",
-                        "declared_value_per_unit": 717,
-                        "denormalized_volume_unit": "ccm",
-                        "denormalized_weight_unit": "gm",
-                        "customer_reference_number": "SH8398559895",
-                        "denormalized_dimension_unit": "mm",
-                        "menu_description": "boAt Rockerz 235 Pro with upto 20 Hours Playback & ASAP Charge Bluetooth"
-                    }
-                ],
-                "storage_location": null,
-                "previous_status_before_rto_initiated": null,
-                "hu_details": [],
-                "order_type": "EXPRESS",
-                "order_tags": [
-                    "OBD"
-                ],
-                "invoice_url": null,
-                "business_id": "FKMINUTES",
-                "payment_details": [
-                    {
-                        "cod_amount": null,
-                        "cod_collection_mode": "COD"
-                    }
-                ],
-                "order_number": "OBD_BATCH_TEST3",
-                "child_order_number": null,
-                "makeline_time": null,
-                "is_vip": false,
-                "is_bulk": false,
-                "final_amount": "717.0",
-                "order_promise_start_time_ondemand": "1753985910000",
-                "ondemand_delivery_promise_mins": "0",
-                "location": {
-                    "name": "Nisha Shirsat",
-                    "phone": "+918071031630",
-                    "address_line_1": "shop no. 4 sagar appts indiranagar sr.no.11/A/3. behind hotel Abhishek veg. erandawane. pune 411004",
-                    "address_line_2": "Erandwane",
-                    "address_line_3": null,
-                    "address_line_4": null,
-                    "street_number": null,
-                    "pincode": "411004",
-                    "lat": 28.406802459298444,
-                    "lng": 77.04356009663992
-                },
-                "ondemand_discount": null,
-                "last_updated_at": null,
-                "assign_time": 1753966521296,
-                "is_parent": false,
-                "is_child": false,
-                "tip": null,
-                "expected_pickup_timestamp": null,
-                "expected_delivery_timestamp": null,
-                "delivery_time_slot_start": "1753906233000",
-                "delivery_time_slot_end": "1753985910000",
-                "eligible_payout": null,
-                "customer_phone": "8806040401",
-                "virtual_number": "+918071031630",
-                "retry_count_of_virtual_number_assignment": "1",
-                "payment_mode": null,
-                "payment_status": null,
-                "qr_expiry_timestamp": null,
-                "payment_data": null,
-                "trip_reference_id": null,
-                "sg_duration_sec": null,
-                "consignment_hub_name": "TESTHUB",
-                "hub_code": "TESTHUB",
-                "consignment_hub_code": "TESTHUB",
-                "delivery_payment_reference_ids": [
-                    "Cash Payment",
-                    "Card",
-                    "FlipkartQR"
-                ],
-                "payment_reference_id": null,
-                "expected_distance": 161.9,
-                "expected_pickup_distance": null,
-                "order_saved": null,
-                "total_delivery_distance": 0.16,
-                "consignment_type": null,
-                "qc_required": null,
-                "qc_status": null,
-                "pack_details": [
-                    {
-                        "description": "Bag Detail",
-                        "reference_number": "RP20225MK01746821",
-                        "storage_location": "33B-DRP"
-                    }
-                ],
-                "segment": "allow_partial",
-                "selected_piece_for_payment": null,
-                "custom_fields": {},
-                "is_pickup_complete_allowed": false,
-                "wait_time_for_pickup_completed": 172800000,
-                "priority": 1,
-                "pickup_bulk_scan_required": false,
-                "delivery_bulk_scan_required": false,
-                "order_instructions": [],
-                "delivery_promise_msg": "",
-                "conscent_code": "0401",
-                "config_hash": "1315561743434519360",
-                "pre_computed_payout": null
+                }
             }
         ],
-        "last_returntohub_status": null,
-        "cards_to_show": []
+        "cards_to_show": [],
+        "worker_status": "in_store"
     }
 }

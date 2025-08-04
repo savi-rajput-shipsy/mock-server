@@ -25,6 +25,33 @@ A simple file-based mock server using FastAPI. Serve mock API responses for deve
      ngrok http 8000
      ```
 
+## Generate Mocks from Curl Commands
+
+Use the included script to automatically generate mock files from curl commands:
+
+```bash
+# Generate mock for a GET request
+python generate_mock.py "curl -X GET https://api.example.com/users/123"
+
+# Generate mock for a POST request with JSON data
+python generate_mock.py "curl -X POST https://api.example.com/users -H 'Content-Type: application/json' -d '{\"name\": \"John\", \"email\": \"john@example.com\"}'"
+
+# Generate mock for a POST request with form data
+python generate_mock.py "curl -X POST https://api.example.com/login -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=john&password=secret123'"
+
+# Generate mock for a PUT request
+python generate_mock.py "curl -X PUT https://api.example.com/users/123 -H 'Content-Type: application/json' -d '{\"name\": \"Jane\"}'"
+
+# Generate mock for a POST request with file upload
+python generate_mock.py "curl -X POST https://api.example.com/upload -F 'file=@document.pdf' -F 'description=My document'"
+```
+
+The script will:
+- Parse the curl command
+- Create the appropriate directory structure
+- Generate `request.json` (if request data exists)
+- Generate `response.json` with realistic sample data
+
 ## Directory Structure
 
 
