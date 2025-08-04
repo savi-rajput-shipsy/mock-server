@@ -1,0 +1,8 @@
+{
+  "method": "GET",
+  "endpoint": "/users/123",
+  "headers": {
+    "Content-Type": "application/json",
+    "organisation-id": "flipkarthl"
+  }
+}

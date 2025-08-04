@@ -45,17 +45,32 @@ def parse_curl_command(curl_cmd):
             headers[key.strip()] = value.strip()
     
     # Parse JSON data (-d with JSON)
-    data_match = re.search(r'-d\s+["\'](.+?)["\']', curl_cmd)
-    if data_match:
-        data_str = data_match.group(1)
-        try:
-            data = json.loads(data_str)
-        except json.JSONDecodeError:
-            # Try to parse as form data
-            if '=' in data_str:
-                form_data = parse_form_data(data_str)
-            else:
-                data = data_str
+    # Find the position of -d and extract everything between quotes
+    d_pos = curl_cmd.find('-d')
+    if d_pos != -1:
+        # Find the opening quote after -d
+        quote_start = curl_cmd.find("'", d_pos)
+        if quote_start == -1:
+            quote_start = curl_cmd.find('"', d_pos)
+        
+        if quote_start != -1:
+            # Find the closing quote
+            quote_char = curl_cmd[quote_start]
+            quote_end = curl_cmd.find(quote_char, quote_start + 1)
+            
+            if quote_end != -1:
+                data_str = curl_cmd[quote_start + 1:quote_end]
+                data_str = data_str.replace('\\"', '"')
+                data_str = data_str.strip()
+                
+                try:
+                    data = json.loads(data_str)
+                except json.JSONDecodeError:
+                    # Try to parse as form data
+                    if '=' in data_str:
+                        form_data = parse_form_data(data_str)
+                    else:
+                        data = data_str
     
     # Parse form data (-F)
     form_matches = re.findall(r'-F\s+["\']([^"\']+)["\']', curl_cmd)
@@ -107,25 +122,25 @@ def generate_mock_files(parsed_curl, output_dir='mocks'):
     endpoint_dir = Path(output_dir) / method / path.replace('/', '_')
     endpoint_dir.mkdir(parents=True, exist_ok=True)
     
-    # Generate request.json (if there's data)
+    # Generate request.json with method, endpoint, headers, and body data
     request_path = endpoint_dir / 'request.json'
-    request_data = None
     
-    # Determine what to put in request.json
+    # Build request structure similar to existing pattern
+    request_structure = {
+        "method": parsed_curl['method'],
+        "endpoint": f"/{path}",
+        "headers": parsed_curl['headers']
+    }
+    
+    # Add body data if available
     if parsed_curl['data']:
-        request_data = parsed_curl['data']
+        request_structure["body"] = parsed_curl['data']
     elif parsed_curl['form_data']:
-        request_data = parsed_curl['form_data']
+        request_structure["body"] = parsed_curl['form_data']
     
-    if request_data:
-        with open(request_path, 'w') as f:
-            json.dump(request_data, f, indent=2)
-        print(f"✓ Created {request_path}")
-    else:
-        # Create empty request.json for documentation purposes
-        with open(request_path, 'w') as f:
-            json.dump({}, f, indent=2)
-        print(f"✓ Created {request_path} (empty)")
+    with open(request_path, 'w') as f:
+        json.dump(request_structure, f, indent=2)
+    print(f"✓ Created {request_path}")
     
     # Generate response.json with sample data
     response_path = endpoint_dir / 'response.json'

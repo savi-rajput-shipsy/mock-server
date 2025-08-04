@@ -49,7 +49,7 @@ python generate_mock.py "curl -X POST https://api.example.com/upload -F 'file=@d
 The script will:
 - Parse the curl command
 - Create the appropriate directory structure
-- Generate `request.json` (if request data exists)
+- Generate `request.json` with method, endpoint, headers, and body data
 - Generate `response.json` with realistic sample data
 
 ## Directory Structure

@@ -1,0 +1,12 @@
+{
+  "method": "POST",
+  "endpoint": "/users",
+  "headers": {
+    "Content-Type": "application/json",
+    "organisation-id": "flipkarthl"
+  },
+  "body": {
+    "name": "John",
+    "email": "john@example.com"
+  }
+}
