@@ -1,0 +1,61 @@
+{
+    "status": "success",
+    "message": "Hub contacts fetched successfully",
+    "data": {
+        "hubs": [
+            
+            {
+                "hub_code": "VLS2",
+                "hub_name": "vls2",
+                "contact_phone": null,
+                "main_hub": false
+            },{
+                "hub_code": "TESTHUB",
+                "hub_name": "TESTHUB",
+                "contact_phone": "9265086635",
+                "main_hub": false
+            },
+            {
+                "hub_code": "VLS23",
+                "hub_name": "vls3",
+                "contact_phone": "9677180815",
+                "main_hub": false
+            },
+            {
+                "hub_code": "VLS2222",
+                "hub_name": "vls2 22",
+                "contact_phone": null,
+                "main_hub": false
+            },{
+                "hub_code": "TESTHUB222",
+                "hub_name": "TESTHUB 22",
+                "contact_phone": "9265086635",
+                "main_hub": true
+            },
+            {
+                "hub_code": "VLS232222",
+                "hub_name": "vls3 22",
+                "contact_phone": "9677180815",
+                "main_hub": false
+            },
+            {
+                "hub_code": "VLS23222233",
+                "hub_name": "vls3 22 43",
+                "contact_phone": "9677180815",
+                "main_hub": false
+            },
+            {
+                "hub_code": "VLS23222253",
+                "hub_name": "vls3 22 53",
+                "contact_phone": "9677180815",
+                "main_hub": false
+            },
+            {
+                "hub_code": "VLS23222263",
+                "hub_name": "vls3 22 63",
+                "contact_phone": "9677180815",
+                "main_hub": false
+            }
+        ]
+    }
+}
