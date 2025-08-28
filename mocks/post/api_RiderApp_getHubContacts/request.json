@@ -1,0 +1,25 @@
+{
+  "method": "POST",
+  "endpoint": "/api/RiderApp/getHubContacts",
+  "headers": {
+    "x-location-lng": "0.0",
+    "x-app-type": "android",
+    "user-id": "1315561743434747756",
+    "x-location-accuracy": "0.0",
+    "x-app-flavor": "demo",
+    "access-token": "OO4UeyiXHrMdJtHLHLZfvfL9oChgiBHfgugyC2pJd4bi82xN7DoPSGEqKC3ms9iE",
+    "Accept-Language": "hi",
+    "x-app-package-name": "com.shipsy.riderapp.demo.generic",
+    "organisation-id": "flipkarthl",
+    "x-app-version": "354",
+    "x-location-lat": "0.0",
+    "Accept": "application/json",
+    "Accept-Charset": "UTF-8",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "hubs": [
+      "TESTHUB"
+    ]
+  }
+}
