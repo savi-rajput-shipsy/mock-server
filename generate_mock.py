@@ -6,7 +6,6 @@ Usage: python generate_mock.py "curl_command_here"
 
 import re
 import json
-import sys
 import os
 from pathlib import Path
 from urllib.parse import urlparse
